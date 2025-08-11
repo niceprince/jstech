@@ -4,7 +4,7 @@ import AboutImageDark2 from "../../assets/images/about/about-image-2-dark.svg"
 
 const AboutSectionTwo = () => {
   return (
-    <section className="dark:bg-gray-dark py-16 md:py-20 lg:py-28">
+    <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
