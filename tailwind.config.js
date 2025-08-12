@@ -25,8 +25,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        rubik: ['Rubik', 'sans-serif'],
-        Playwrite: ['Playwrite AU NSW', 'cursive'],
+        // rubik: ['Rubik', 'sans-serif'],
+        // Playwrite: ['Playwrite AU NSW', 'cursive'],
       },
       colors: {
         current: "currentColor",
