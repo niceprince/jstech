@@ -1,20 +1,17 @@
-import { useState } from "react";
-
 import Image from "../common/Image";
-import SectionTitle from "../Common/SectionTitle";
-import videoImg from "../../assets/images/ready-help/video.jpg"
+import SectionTitle from "../common/SectionTitle";
+import helpImg from '../../assets/images/ready-help/helpimg.jpg'
 
-
+const paraText = `Our team is committed to delivering exceptional solutions tailored to your unique needs. Whether you require a single service or a complete package, we bring expertise, creativity, and dedication to every project. We believe in building long-term partnerships and ensuring your satisfaction at every stage. Let’s work together to bring your ideas to life and achieve your business goals.`
 
 const ReadyToHelp = () => {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph={paraText}
+          width="1000px"
           center
           mb="80px"
         />
@@ -26,7 +23,7 @@ const ReadyToHelp = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src={videoImg} alt="video image" fill />
+                <Image src={helpImg} alt="video image" fill />
                 {/* <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"

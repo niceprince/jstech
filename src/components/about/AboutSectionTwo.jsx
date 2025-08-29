@@ -1,6 +1,7 @@
 import Image from "../common/Image";
 import AboutImage2 from "../../assets/images/about/about-image-2.svg"
 import AboutImageDark2 from "../../assets/images/about/about-image-2-dark.svg"
+import ClassComponentTest from "./ClassComponentTest";
 
 const AboutSectionTwo = () => {
   return (
@@ -8,6 +9,7 @@ const AboutSectionTwo = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
+            <ClassComponentTest />
             <div
               className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
               data-wow-delay=".15s"

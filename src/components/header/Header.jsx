@@ -163,9 +163,9 @@ const Header = () => {
                 >
                   Get in touch
                 </NavLink>
-                <div>
+                {/* <div>
                   <ThemeToggler />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

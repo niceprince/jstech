@@ -1,7 +1,8 @@
 import Image from "../common/Image";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../common/SectionTitle";
 import AboutImage from "../../assets/images/about/about-image.svg"
 import AboutImageDark from "../../assets/images/about/about-image-dark.svg"
+
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
