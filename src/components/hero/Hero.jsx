@@ -1,19 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router";
-// import { useSelector, useDispatch } from "react-redux";
-// import { increment, decrement } from '../../redux/counter/counterSlice';
-
 import Bubbles from "./Bubbles";
 
 import { TextType } from "./TextType";
 import HeroWave from "./HeroWave";
 import style from "./TextType.module.css";
 import styleds from './Hero.module.css';
+import ScrollableButton from "../common/ScrollableButton";
 
 const Hero = () => {
-
-  // const count = useSelector((state) => state.counter.value);
-  // const dispatch = useDispatch();
 
   return (
     <>
@@ -30,10 +25,6 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[900px] text-left"
                 data-wow-delay=".2s"
               >
-                {/* <h1>Counter: {count}</h1>
-                <button onClick={() => dispatch(increment())}>Increment</button>
-                <button onClick={() => dispatch(decrement())}>Decrement</button> */}
-
                 <h3 className="mb-5 text-2xl font-semibold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-3xl md:leading-tight">
                   Everything your organisation needs, <span className={`${style.gradient}`}>Every day...</span>
                 </h3>
@@ -45,18 +36,7 @@ const Hero = () => {
                   Your business deserves to look good, rank high, and leave a lasting impression. That’s why we offer everything from web development and SEO to printing your business stationery, flyers, and banners — all in one place. We make it simple, fast, and reliable, so you can focus on what matters most: growing your business.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <NavLink
-                    to="/#"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Start now
-                  </NavLink>
-                  <NavLink
-                    to="/#"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star a demo
-                  </NavLink>
+                  <ScrollableButton scrollAmount={window.innerHeight} />
                 </div>
               </div>
             </div>

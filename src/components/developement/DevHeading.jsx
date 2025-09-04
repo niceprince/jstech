@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import styles from './DevHeading.module.css';
+import ScrollableButton from '../common/ScrollableButton';
 
 const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
   const particleContainer = useRef(null);
@@ -105,10 +106,6 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
     });
   };
 
-  const handleScroll = () => {
-    window.scrollTo({ top: 350, behavior: 'smooth' });
-  }
-
   return (
     <div className={styles.devHead} onMouseMove={mouseMoveEffect}>
       <div className={styles.gradientBackground} style={{backgroundImage: bgImage }}>
@@ -123,7 +120,7 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
       <div className={styles.contentContainer}>
         <h1>{headText}</h1>
         <p>{paraText}</p>
-        <button className={styles.btn} onClick={handleScroll}>Explore More</button>
+        <ScrollableButton scrollAmount={350} />
       </div>
     </div>
   );

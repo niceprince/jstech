@@ -39,7 +39,7 @@ const AboutSectionOne = () => {
             </div>
             <div className="mb-9">
               <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">With a passion for design, technology, and customer satisfaction, we specialize in:</p>
-              <ul class="list-disc">
+              <ul className="list-disc">
                 <li><strong>Web Development</strong> – From sleek websites to powerful web applications, we craft digital experiences that drive results.</li>
                 <li><strong>Graphic Design</strong> – Creative visuals, branding, and marketing materials that make your business stand out.</li>
                 <li><strong>Printing & Stationery</strong> – High-quality printing solutions and office stationery tailored to your everyday business needs.</li>

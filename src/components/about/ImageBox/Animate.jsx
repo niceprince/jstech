@@ -1,8 +1,8 @@
 import styles from './Animate.module.scss'
 
 const Animate = () => {
-  return <div class={styles.area}>
-    <ul class={styles.circles}>
+  return <div className={styles.area}>
+    <ul className={styles.circles}>
       <li></li>
       <li></li>
       <li></li>
