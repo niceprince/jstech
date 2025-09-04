@@ -3,37 +3,36 @@ import Image from "../common/Image";
 import { NavLink } from "react-router";
 import Logo from "../../assets/images/logo.svg";
 import Logo2 from "../../assets/images/logo-2.svg";
+import Jsstech from "../../assets/images/jss.svg"
 
 const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-gray pt-16 md:pt-20 lg:pt-24 bg-indigo-100"
         data-wow-delay=".1s"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <NavLink to="/" className="mb-8 inline-block">
+                <NavLink to="/" className="mb-4 inline-block">
                   <Image
-                    src={Logo2}
+                    src={Jsstech}
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
+                    className="dark:hidden"
+                    width={120}
                   />
                   <Image
-                    src={Logo}
+                    src={Jsstech}
                     alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                    className="hidden dark:block"
+                    width={120}
                   />
                 </NavLink>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Address: G-78, Ramesh Market, Street No. - 8, <br />
+                  East of Kailash, Lajpat Nagar, Delhi-110059
                 </p>
                 <div className="flex items-center">
                   <a
@@ -202,10 +201,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and{" "}
-              <a href="https://nextjstemplates.com" rel="nofollow noopener">
-                Next.js Templates
-              </a>
+              © 2025 JSS Tech. All rights reserved.
             </p>
           </div>
         </div>

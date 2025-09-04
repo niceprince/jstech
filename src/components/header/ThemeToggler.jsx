@@ -12,6 +12,10 @@ const ThemeToggler = () => {
 
   useEffect(() => {
     const root = window.document.documentElement;
+    const rootBody = window.document.body;
+
+    // `bg-[#FCFCFC] dark:bg-black ${inter.className}`
+    rootBody.classList.add('dark:bg-black')
 
     if (theme === "dark") {
       root.classList.add("dark");

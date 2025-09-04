@@ -6,6 +6,8 @@ export default {
     "./src/**/**/*.{js,ts,jsx,tsx}",
     "./src/**/**/**/*.{js,ts,jsx,tsx}",
     "./src/**/**/**/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   theme: {
@@ -22,6 +24,10 @@ export default {
       "2xl": "1400px",
     },
     extend: {
+      fontFamily: {
+        // rubik: ['Rubik', 'sans-serif'],
+        // Playwrite: ['Playwrite AU NSW', 'cursive'],
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
@@ -30,8 +36,8 @@ export default {
         dark: "#1D2430",
         primary: "#4A6CF7",
         yellow: "#FBB040",
-        "body-color": "#788293",
-        "body-color-dark": "#959CB1",
+        "body-color": "#000",
+        "body-color-dark": "#000000",
         "gray-dark": "#1E232E",
         "gray-light": "#F0F2F9",
         stroke: "#E3E8EF",

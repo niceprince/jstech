@@ -1,40 +1,61 @@
+import React from "react";
 import { NavLink } from "react-router";
+// import { useSelector, useDispatch } from "react-redux";
+// import { increment, decrement } from '../../redux/counter/counterSlice';
+
+import Bubbles from "./Bubbles";
+
+import { TextType } from "./TextType";
+import HeroWave from "./HeroWave";
+import style from "./TextType.module.css";
+import styleds from './Hero.module.css';
 
 const Hero = () => {
+
+  // const count = useSelector((state) => state.counter.value);
+  // const dispatch = useDispatch();
+
   return (
     <>
       <section
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className={`${styleds.heroSection} dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]`}
       >
-        <div className="container">
+        <HeroWave />
+        <Bubbles />
+        <div className="container" style={{position: "relative", zIndex: '2'}}>
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                className="wow fadeInUp mx-auto max-w-[900px] text-left"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
-                </h1>
+                {/* <h1>Counter: {count}</h1>
+                <button onClick={() => dispatch(increment())}>Increment</button>
+                <button onClick={() => dispatch(decrement())}>Decrement</button> */}
+
+                <h3 className="mb-5 text-2xl font-semibold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-3xl md:leading-tight">
+                  Everything your organisation needs, <span className={`${style.gradient}`}>Every day...</span>
+                </h3>
+                <TextType />
+                <h2></h2>
+                <h4 className="dark:text-body-color-dark mb-4 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+                  Your One-Stop Solution for Digital & Printing Needs</h4>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  Your business deserves to look good, rank high, and leave a lasting impression. That’s why we offer everything from web development and SEO to printing your business stationery, flyers, and banners — all in one place. We make it simple, fast, and reliable, so you can focus on what matters most: growing your business.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <NavLink
-                    to="https://nextjstemplates.com/templates/saas-starter-startup"
+                    to="/#"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    🔥 Start now
                   </NavLink>
                   <NavLink
-                    to="https://github.com/NextJSTemplates/startup-nextjs"
+                    to="/#"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    Star a demo
                   </NavLink>
                 </div>
               </div>
