@@ -52,7 +52,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <NavLink
                 to="/"
-                className={`header-logo block w-full`}
+                className={`py-4 header-logo block w-full`}
               >
                 <Image
                   src={Jsstech}
@@ -158,10 +158,16 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <NavLink
-                  to="/signup"
+                  to="/about"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary mr-4 px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 rounded-3"
+                >
+                  About us
+                </NavLink>
+                <NavLink
+                  to="/contact"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 rounded-3"
                 >
-                  Get in touch
+                  Contact
                 </NavLink>
                 {/* <div>
                   <ThemeToggler />

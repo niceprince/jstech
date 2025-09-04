@@ -1,9 +1,14 @@
-import React from "react";
+import React from 'react';
+import PageTwoSectionView from '../components/common/PageTwoSectionView';
+import ContactUs from '../components/contact/Contact';
 
 const Contact = () => {
-    return (
-        <h1>Contact</h1>
-    )
+
+  return <ContactUs />
+
+  // return <PageTwoSectionView RightItem={() => <div>this is right</div>}>
+  //     <div>This web Contact page</div>
+  //   </PageTwoSectionView>
 }
 
 export default Contact;

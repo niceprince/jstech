@@ -1,11 +1,13 @@
 import AboutSectionOne from "../components/about/AboutSectionOne";
-import AboutSectionTwo from "../components/about/AboutSectionTwo";
+import PageTwoSectionView from "../components/common/PageTwoSectionView";
+import Animate from "../components/about/ImageBox/Animate";
 
 const About = () => {
     return (
         <>
-          <AboutSectionOne />
-          <AboutSectionTwo />
+          <PageTwoSectionView RightItem={Animate}>
+            <AboutSectionOne />
+          </PageTwoSectionView>
         </>
     )
 }

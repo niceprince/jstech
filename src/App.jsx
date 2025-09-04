@@ -1,17 +1,15 @@
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { store } from './redux/Store';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Layout from './Layout';
-import TestContext from './pages/TestContext';
-
-import MyContext from './context/MyContext';
+import WebDevelopment from './pages/WebDevelopment';
+import GraphicDesigns from './pages/GraphicDesigns';
+import PrintingServices from './pages/PrintingServices';
 
 const routers = createBrowserRouter([
   {
-    path: "/rt-test",
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -26,28 +24,29 @@ const routers = createBrowserRouter([
         path: "contact",
         element: <Contact />
       },
-
       {
-        path: "test-context",
-        element: <TestContext />
+        path: "web-development",
+        element: <WebDevelopment />
+      },
+      {
+        path: "graphic-designs",
+        element: <GraphicDesigns />
+      },
+      {
+        path: "printing-services",
+        element: <PrintingServices />
+      },
+      {
+        path: "contact",
+        element: <Contact />
       }
     ]
   }
 ]);
 
-const contextData = {
-  data: "This is my data",
-  name: "my name is Prince",
-  age: 36
-}
-
 function App() {
   return( 
-    <Provider store={store}>
-      <MyContext.Provider value={contextData}>
-        <RouterProvider router={routers} />
-      </MyContext.Provider>
-    </Provider>
+    <RouterProvider router={routers} />
   )
 }
 

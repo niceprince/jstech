@@ -6,6 +6,7 @@ import { NavLink } from "react-router";
 import Bubbles from "./Bubbles";
 
 import { TextType } from "./TextType";
+import HeroWave from "./HeroWave";
 import style from "./TextType.module.css";
 import styleds from './Hero.module.css';
 
@@ -20,6 +21,7 @@ const Hero = () => {
         id="home"
         className={`${styleds.heroSection} dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]`}
       >
+        <HeroWave />
         <Bubbles />
         <div className="container" style={{position: "relative", zIndex: '2'}}>
           <div className="-mx-4 flex flex-wrap">

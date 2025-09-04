@@ -37,10 +37,10 @@
     opacity: 0;
   }
   1% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     transform: translateX(70vmin);
@@ -54,10 +54,10 @@
     opacity: 0;
   }
   1% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     transform: translateX(70vmin);

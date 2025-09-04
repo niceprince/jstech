@@ -1,7 +1,7 @@
 import Image from "../common/Image";
 import { NavLink } from "react-router";
 
-const SingleBlog = ({ ourFocus }) => {
+const OurFocus = ({ ourFocus }) => {
   const { title, image, paragraph, tags } = ourFocus;
   return (
     <>
@@ -36,4 +36,4 @@ const SingleBlog = ({ ourFocus }) => {
   );
 };
 
-export default SingleBlog;
+export default OurFocus;

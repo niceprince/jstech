@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-gray pt-16 md:pt-20 lg:pt-24 bg-indigo-100"
         data-wow-delay=".1s"
       >
         <div className="container">

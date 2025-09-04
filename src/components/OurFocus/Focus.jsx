@@ -1,14 +1,16 @@
 import SectionTitle from "../common/SectionTitle";
 import OurFocus from "./OurFocus";
 import focusData from "./FocusData";
+import styles from "./Focus.module.css"
 
 const Focus = () => {
   return (
     <section
-      id="blog"
-      className="bg-gray-900 dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
+      id="focusSection"
+      className={`bg-gray-900 dark:bg-bg-color-dark py-16 md:py-20 lg:py-28 ${styles.focusSection}`}
     >
       <div className="container">
+        <div className="max-w-[1200px] m-auto">
         <SectionTitle
           title="Service-Focused Approach"
           paragraph="End-to-end services in graphic design, printing, and web development — tailored to brand, trusted partner for design, print, and digital solutions that deliver results."
@@ -22,6 +24,7 @@ const Focus = () => {
               <OurFocus ourFocus={focus} />
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

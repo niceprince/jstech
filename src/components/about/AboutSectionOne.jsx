@@ -2,6 +2,7 @@ import Image from "../common/Image";
 import SectionTitle from "../common/SectionTitle";
 import AboutImage from "../../assets/images/about/about-image.svg"
 import AboutImageDark from "../../assets/images/about/about-image-dark.svg"
+import Animate from "./ImageBox/Animate";
 
 
 const checkIcon = (
@@ -20,62 +21,57 @@ const AboutSectionOne = () => {
     </p>
   );
 
-  return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
-              />
-
-              <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div>
-              </div>
+  return <>
+    <SectionTitle
+      title="About Us"
+      paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+      mb="44px"
+    />
+    <div className="w-full px-4 lg:max-w-[1000px]">
+      <div
+        className="wow fadeInUp mb-12 lg:mb-0"
+        data-wow-delay=".15s"
+      >
+        <div className="mx-[-12px] flex flex-wrap">
+          <div className="w-full px-3 sm:w-1/2 lg:w-full">
+            <div className="mb-9">
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Welcome to JSS Tech, your trusted partner for creative and digital solutions. We are a full-service company dedicated to helping businesses, brands, and individuals bring their ideas to life with innovation, quality, and reliability.</p>
             </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
-              >
-                <Image
-                  src={AboutImage}
-                  alt="about-image"
-                  fill="true"
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src={AboutImageDark}
-                  alt="about-image"
-                  fill="true"
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
-                />
-              </div>
+            <div className="mb-9">
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">With a passion for design, technology, and customer satisfaction, we specialize in:</p>
+              <ul class="list-disc">
+                <li><strong>Web Development</strong> – From sleek websites to powerful web applications, we craft digital experiences that drive results.</li>
+                <li><strong>Graphic Design</strong> – Creative visuals, branding, and marketing materials that make your business stand out.</li>
+                <li><strong>Printing & Stationery</strong> – High-quality printing solutions and office stationery tailored to your everyday business needs.</li>
+                <li><strong>SEO & Digital Marketing</strong> – Optimized strategies to enhance your online visibility and grow your brand.</li>
+                <li><strong>Office Solutions</strong> – Comprehensive support for all your professional and operational requirements.</li>                      
+              </ul>
+            </div>
+            <div className="mb-9">
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">At JSS Tech, we believe every project is unique. That’s why we combine creativity, strategy, and technology to deliver solutions that align with your goals. Our team of skilled designers, developers, and professionals works hand in hand to ensure quality, timely delivery, and complete customer satisfaction.</p>
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Whether you’re a startup building your brand identity or an established business looking to expand, we are here to support your journey with innovative and cost-effective solutions.</p>
+            </div>
+            <div className="mb-9">
+              <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                ✨ Our Mission
+              </h3>
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                To provide creative, reliable, and result-driven solutions that empower businesses to grow and succeed.
+              </p>
+            </div>
+            <div className="mb-9">
+              <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                ✨ Our Vision
+              </h3>
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                To be a one-stop partner for all digital, creative, and office needs by building lasting relationships with our clients.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </div>
+  </>
 };
 
 export default AboutSectionOne;

@@ -22,7 +22,7 @@ const focusData = [
   {
     id: 3,
     title: "Design it. Print it. Love it.",
-    paragraph: "one-stop solution for creative design and professional printing.",
+    paragraph: "The one-stop solution for creative design and professional printing.",
     image: printing,
     tags: ["Prints"],
   },
