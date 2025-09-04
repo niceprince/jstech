@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
   return <>
     <SectionTitle
       title="About Us"
-      paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+      paragraph="Our main focus is on empowering businesses to safeguard their most critical and vulnerable applications. We achieve this through knowledge sharing, innovative solutions, and a collaborative approach that ensures organizations stay protected in an ever-evolving digital landscape."
       mb="44px"
     />
     <div className="w-full px-4 lg:max-w-[1000px]">

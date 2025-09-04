@@ -100,7 +100,7 @@ const ContactUs = () => {
     <>
       <SectionTitle
         title="Contact Us"
-        paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+        paragraph="Let’s start a conversation! Whether you’re looking for creative design, robust web development, or reliable printing solutions, our team is just a message away. We value every inquiry and will ensure your experience with us is smooth and productive."
         mb="44px"
         width="auto"
       />

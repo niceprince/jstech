@@ -159,19 +159,16 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <NavLink
                   to="/about"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary mr-4 px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 rounded-3"
+                  className="inline-flex mr-4 items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
                 >
                   About us
                 </NavLink>
                 <NavLink
                   to="/contact"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9 rounded-3"
+                  className="inline-flex items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
                 >
                   Contact
                 </NavLink>
-                {/* <div>
-                  <ThemeToggler />
-                </div> */}
               </div>
             </div>
           </div>

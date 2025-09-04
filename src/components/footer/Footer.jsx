@@ -102,28 +102,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/blogs"
+                    <NavLink
+                      to="/web-development"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Blog
-                    </a>
+                      Web Development
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/pricing"
+                    <NavLink
+                      to="/graphic-designs"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Pricing
-                    </a>
+                      Graphic Designs
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/about"
+                    <NavLink
+                      to="/printing-services"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      About
-                    </a>
+                      Printing Services
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -136,28 +136,20 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
+                    <NavLink
+                      to="javascript:void(0)"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       TOS
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <NavLink
+                      to="javascript:void(0)"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -170,28 +162,20 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/contact"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
+                    <NavLink
+                      to="/about"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       About
-                    </a>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Contact
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -201,7 +185,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              © 2025 JSS Tech. All rights reserved.
+              © 2025 JSMatrix. All rights reserved.
             </p>
           </div>
         </div>
