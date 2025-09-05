@@ -112,7 +112,9 @@ const ContactUs = () => {
           Need contact? Please raise the query!
         </h2>
         <p className="mb-12 text-base font-medium text-body-color">
-          Our support team will get back to you ASAP via email or call.
+          For immediate assistance, please call +91 8368115720. <br /> 
+          Or Fill the form...<br />
+          Our team will get back to you ASAP via email or call.
         </p>
         <form onSubmit={handleSubmit}>
           <div className="-mx-4 flex flex-wrap">

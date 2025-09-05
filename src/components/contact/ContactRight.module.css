@@ -48,10 +48,10 @@
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   text-align: center;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse 2.92s infinite;
-  -moz-animation: bg-scrolling-reverse 2.92s infinite;
-  -o-animation: bg-scrolling-reverse 2.92s infinite;
-  animation: bg-scrolling-reverse 2.92s infinite;
+  -webkit-animation: bg-scrolling-reverse 3.92s infinite;
+  -moz-animation: bg-scrolling-reverse 3.92s infinite;
+  -o-animation: bg-scrolling-reverse 3.92s infinite;
+  animation: bg-scrolling-reverse 3.92s infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
@@ -88,106 +88,106 @@
 }
 
 #line11 {
-  animation: touchShine1_1 3s ease infinite;
+  animation: touchShine1_1 3s ease 4;
 
 }
 
 #line12 {
-  animation: touchShine1_2 3s ease infinite;
+  animation: touchShine1_2 3s ease 4;
 
 }
 
 #line21 {
-  animation: touchShine2_1 3s ease infinite;
+  animation: touchShine2_1 3s ease 4;
 
 }
 
 #line22 {
-  animation: touchShine2_2 3s ease infinite;
+  animation: touchShine2_2 3s ease 4;
 
 }
 
 #line31 {
-  animation: touchShine3_1 3s ease infinite;
+  animation: touchShine3_1 3s ease 4;
 
 }
 
 #line32 {
-  animation: touchShine3_2 3s ease infinite;
+  animation: touchShine3_2 3s ease 4;
 
 }
 
 #line4 {
-  animation: touchShine4 3s ease infinite;
+  animation: touchShine4 3s ease 4;
 
 }
 
 #line51 {
-  animation: touchShine5_1 3s ease infinite;
+  animation: touchShine5_1 3s ease 4;
 
 }
 
 #line52 {
-  animation: touchShine5_2 3s ease infinite;
+  animation: touchShine5_2 3s ease 4;
 
 }
 
 #line61 {
-  animation: touchShine6_1 3s ease infinite;
+  animation: touchShine6_1 3s ease 4;
 
 }
 
 #line62 {
-  animation: touchShine6_2 3s ease infinite;
+  animation: touchShine6_2 3s ease 4;
 
 }
 
 #line71 {
-  animation: touchShine7_1 3s ease infinite;
+  animation: touchShine7_1 3s ease 4;
 
 }
 
 #line72 {
-  animation: touchShine7_2 3s ease infinite;
+  animation: touchShine7_2 3s ease 4;
 
 }
 
 #line8 {
-  animation: touchShine8 3s ease infinite;
+  animation: touchShine8 3s ease 4;
 
 }
 
 #line91 {
-  animation: touchShine9_1 3s ease infinite;
+  animation: touchShine9_1 3s ease 4;
 
 }
 
 #line92 {
-  animation: touchShine9_2 3s ease infinite;
+  animation: touchShine9_2 3s ease 4;
 
 }
 
 #line101 {
-  animation: touchShine10_1 3s ease infinite;
+  animation: touchShine10_1 3s ease 4;
 
 }
 
 #line102 {
-  animation: touchShine10_2 3s ease infinite;
+  animation: touchShine10_2 3s ease 4;
 
 }
 
 #line111 {
-  animation: touchShine11_1 3s ease infinite;
+  animation: touchShine11_1 3s ease 4;
 
 }
 
 #line112 {
-  animation: touchShine11_2 3s ease infinite;
+  animation: touchShine11_2 3s ease 4;
 
 }
 #headset {
-  animation: touchTalk 3s ease infinite;
+  animation: touchTalk 3s ease 4;
 
 }
         
