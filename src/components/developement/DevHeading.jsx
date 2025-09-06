@@ -8,10 +8,9 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
   useEffect(() => {
     if (!particleContainer.current) return;
     const particlesContainer = particleContainer.current;
-    const particleCount = 40;
+    const particleCount = 25;
     const bgText = headingBgText;
     
-    // Create particles
     for (let i = 0; i < particleCount; i++) {
       const rNum = Math.floor(Math.random() * bgText.length);
       createParticle(bgText[rNum]);
@@ -20,7 +19,7 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
     function createParticle(devText) {
       const particle = document.createElement('div');
       particle.innerHTML = devText;
-      particle.className = styles.particle; // ✅ use CSS module class instead of raw string
+      particle.className = styles.particle;
 
       const size = Math.random() * 3 + 1;
       particle.style.width = `${size}px`;
@@ -46,7 +45,7 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
       const pos = resetParticle(particle);
 
       const duration = Math.random() * 10 + 10;
-      const delay = Math.random() * 5;
+      const delay = Math.random() * 1;
 
       setTimeout(() => {
         particle.style.transition = `all ${duration}s linear`;
@@ -63,51 +62,52 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
         }, duration * 1000);
       }, delay * 1000);
     }
-  }, []); // ✅ only run once on mount
+  }, []);
 
-  const mouseMoveEffect = (e) => {
-    if (!particleContainer.current) return;
-    const particlesContainer = particleContainer.current;
+  // const mouseMoveEffect = (e) => {
+  //   if (!particleContainer.current) return;
+  //   const particlesContainer = particleContainer.current;
 
-    const mouseX = (e.clientX / window.innerWidth) * 100;
-    const mouseY = (e.clientY / window.innerHeight) * 100;
+  //   const mouseX = (e.clientX / window.innerWidth) * 100;
+  //   const mouseY = (e.clientY / window.innerHeight) * 100;
 
-    const particle = document.createElement('div');
-    particle.innerHTML = "✨";
-    particle.className = styles.particle;
+  //   const particle = document.createElement('div');
+  //   particle.innerHTML = "✨";
+  //   particle.className = styles.particle;
 
-    const size = Math.random() * 4 + 2;
-    particle.style.width = `${size}px`;
-    particle.style.height = `${size}px`;
-    particle.style.left = `${mouseX}%`;
-    particle.style.top = `${mouseY}%`;
-    particle.style.opacity = '0.6';
+  //   const size = Math.random() * 4 + 2;
+  //   particle.style.width = `${size}px`;
+  //   particle.style.height = `${size}px`;
+  //   particle.style.left = `${mouseX}%`;
+  //   particle.style.top = `${mouseY}%`;
+  //   particle.style.opacity = '0.6';
 
-    particlesContainer.appendChild(particle);
+  //   particlesContainer.appendChild(particle);
 
-    setTimeout(() => {
-      particle.style.transition = 'all 2s ease-out';
-      particle.style.left = `${mouseX + (Math.random() * 10 - 5)}%`;
-      particle.style.top = `${mouseY + (Math.random() * 10 - 5)}%`;
-      particle.style.opacity = '0';
+  //   setTimeout(() => {
+  //     particle.style.transition = 'all 2s ease-out';
+  //     particle.style.left = `${mouseX + (Math.random() * 10 - 5)}%`;
+  //     particle.style.top = `${mouseY + (Math.random() * 10 - 5)}%`;
+  //     particle.style.opacity = '0';
 
-      setTimeout(() => {
-        particle.remove();
-      }, 2000);
-    }, 10);
+  //     setTimeout(() => {
+  //       particle.remove();
+  //     }, 2000);
+  //   }, 10);
 
-    const spheres = document.querySelectorAll(`.${styles.gradientSphere}`);
-    const moveX = (e.clientX / window.innerWidth - 0.5) * 5;
-    const moveY = (e.clientY / window.innerHeight - 0.5) * 5;
+  //   const spheres = document.querySelectorAll(`.${styles.gradientSphere}`);
+  //   const moveX = (e.clientX / window.innerWidth - 0.5) * 5;
+  //   const moveY = (e.clientY / window.innerHeight - 0.5) * 5;
 
-    spheres.forEach((sphere) => {
-      // const currentTransform = getComputedStyle(sphere).transform;
-      sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    });
-  };
+  //   spheres.forEach((sphere) => {
+  //     // const currentTransform = getComputedStyle(sphere).transform;
+  //     sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  //   });
+  // };
 
+  // onMouseMove={mouseMoveEffect}
   return (
-    <div className={styles.devHead} onMouseMove={mouseMoveEffect}>
+    <div className={styles.devHead}>
       <div className={styles.gradientBackground} style={{backgroundImage: bgImage }}>
         <div className={`${styles.gradientSphere} ${styles.sphere1}`}></div>
         <div className={`${styles.gradientSphere} ${styles.sphere2}`}></div>

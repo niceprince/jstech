@@ -42,7 +42,7 @@
   }
 }
 .rightSection {
-  height: 100%;
+  min-height: 100%;
   margin-top: 4.5rem;
   color: #999;
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
@@ -408,4 +408,13 @@
     98% {transform: rotate(0deg); transform-origin: 50% 70%;}
     100% {transform: rotate(0deg); transform-origin: 50% 70%;}
 
+}
+
+@media screen and (max-width: 768px) {
+  .rightSection {
+    margin-top: 1rem;
+  }
+  .rightSection::before {
+    font-size: 3rem;
+  }
 }
