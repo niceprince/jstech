@@ -9,7 +9,7 @@ const WebDevelopment = () => {
   const paraText = `We create fast, secure, and responsive websites that look great on every device. Our web solutions are built with the latest technologies to ensure seamless performance and long-term growth for your business.`
   
   return <>
-    <section id="about" className="pt-18 md:pt-20">
+    <section className="pt-18 pt-[4rem] md:pt-[70px]">
       <DevHeading headingBgText={languages} headText={headText} paraText={paraText} bgImage={devBgImg} />
       <div className='container mt-8 text-black'>
         <div className="mb-9 wow fadeInUp shadow-three mb-12 rounded-sm bg-white px-8 py-11">

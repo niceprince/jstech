@@ -71,7 +71,7 @@ const Header = () => {
               </NavLink>
             </div>
             <div className="flex w-full items-center justify-between px-4">
-              <div>
+              <div className="w-full">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -102,7 +102,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  <ul className="block w-full lg:flex lg:space-x-12 justify-end">
                     {MenuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -153,10 +153,26 @@ const Header = () => {
                         )}
                       </li>
                     ))}
+                    <li className="flex items-center justify-end">
+                      <div className="block w-full lg:flex justify-end">
+                        <NavLink
+                          to="/about"
+                          className="inline-flex mr-4 items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
+                        >
+                          About us
+                        </NavLink>
+                        <NavLink
+                          to="/contact"
+                          className="inline-flex items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
+                        >
+                          Contact
+                        </NavLink>
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <NavLink
                   to="/about"
                   className="inline-flex mr-4 items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
@@ -169,7 +185,7 @@ const Header = () => {
                 >
                   Contact
                 </NavLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

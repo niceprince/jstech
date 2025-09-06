@@ -118,7 +118,7 @@ const DevHeading = ({headingBgText, headText, paraText, bgImage}) => {
         <div className={styles.particlesContainer} ref={particleContainer}></div>
       </div>
       <div className={styles.contentContainer}>
-        <h1>{headText}</h1>
+        <h1 className='text-4xl'>{headText}</h1>
         <p>{paraText}</p>
         <ScrollableButton scrollAmount={350} />
       </div>
