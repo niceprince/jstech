@@ -4,6 +4,7 @@ import ThemeToggler from "./ThemeToggler";
 import MenuData from "./MenuDatas";
 import Image from "../common/Image";
 import Jsstech from "../../assets/images/jss.svg"
+import JsmLogo from "../../assets/images/jsm-logo.svg"
 
 
 const Header = () => {
@@ -55,14 +56,13 @@ const Header = () => {
                 className={`py-4 header-logo block w-full`}
               >
                 <Image
-                  src={Jsstech}
+                  src={JsmLogo}
                   alt="logo"
-                  width={130}
-                  height={30}
+                  height={50}
                   className="dark:hidden"
                 />
                 <Image
-                  src={Jsstech}
+                  src={JsmLogo}
                   alt="logo"
                   width={100}
                   height={30}
