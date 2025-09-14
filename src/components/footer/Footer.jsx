@@ -1,9 +1,7 @@
 "use client";
 import Image from "../common/Image";
 import { NavLink } from "react-router";
-import Logo from "../../assets/images/logo.svg";
-import Logo2 from "../../assets/images/logo-2.svg";
-import Jsstech from "../../assets/images/jss.svg"
+import JsMatrix from "../../assets/images/jsm-logo.svg"
 
 const Footer = () => {
   return (
@@ -18,25 +16,21 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <NavLink to="/" className="mb-4 inline-block">
                   <Image
-                    src={Jsstech}
+                    src={JsMatrix}
                     alt="logo"
-                    className="dark:hidden"
-                    width={120}
-                  />
-                  <Image
-                    src={Jsstech}
-                    alt="logo"
-                    className="hidden dark:block"
                     width={120}
                   />
                 </NavLink>
+                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
+                  Email - info@jsmatrix.in
+                </p>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
                   Address: G-78, Ramesh Market, Street No. - 8, <br />
                   East of Kailash, Lajpat Nagar, Delhi-110059
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="/"
+                    href="https://www.instagram.com/jsmatrix2025/"
                     aria-label="social-link"
                     className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
@@ -50,7 +44,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.instagram.com/jsmatrix2025/"
                     aria-label="social-link"
                     className="dark:text-body-color-dark mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
@@ -171,7 +165,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/"
+                      to="/contact"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Contact

@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router";
-import ThemeToggler from "./ThemeToggler";
+import { NavLink, useLocation } from "react-router";
 import MenuData from "./MenuDatas";
 import Image from "../common/Image";
-import Jsstech from "../../assets/images/jss.svg"
 import JsmLogo from "../../assets/images/jsm-logo.svg"
 
 
@@ -16,6 +14,8 @@ const Header = () => {
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
+  const location = useLocation();
+  
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -25,7 +25,8 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    setNavbarOpen(false);
+  }, [location.pathname]);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
