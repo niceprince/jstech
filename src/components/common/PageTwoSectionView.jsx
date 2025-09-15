@@ -1,5 +1,5 @@
 
-const PageTwoSectionView = ({RightItem, pageSectionClasses = null, children}) => {
+const PageTwoSectionView = ({RightItem, pageSectionClasses = '', children}) => {
   const RightSection = RightItem;
   console.log(RightSection().props)
 
