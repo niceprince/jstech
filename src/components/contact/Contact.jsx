@@ -112,8 +112,8 @@ const ContactUs = () => {
           Need contact? Please raise the query!
         </h2>
         <p className="mb-12 text-base font-medium text-body-color">
-          For immediate assistance, please call +91 8368115720, or email at info@jsmatrix.in <br /> 
-          Or Fill the form...<br />
+          For immediate assistance, <br />Please call +91 8368115720, or <br />Email at info@jsmatrix.in <br /> 
+          Or fill the form...<br />
           Our team will get back to you ASAP via email or call.
         </p>
         <form onSubmit={handleSubmit}>

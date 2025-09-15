@@ -4,7 +4,7 @@ const ContactRight = () => {
   
   return <>
     <div className={styles.rightSection}>
-      <h2 className='text-5xl md:text-7xl'>At <br /> +918368115720</h2>
+      <h2 className='text-4xl md:text-6xl'>At <br /> +918368115720</h2>
       <svg id="get-in-touch" className="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 100.85 99.84">
         <g id={styles.headset}>
           <path className={styles.cls1} d="M31.69,77.64,22.81,80a6.64,6.64,0,0,1-6.65-6.64V60.88a6.64,6.64,0,0,1,6.65-6.64l8.88,2.34Z" transform="translate(-0.06 -0.08)"/>

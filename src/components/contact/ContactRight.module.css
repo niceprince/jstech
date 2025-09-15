@@ -417,4 +417,7 @@
   .rightSection::before {
     font-size: 3rem;
   }
+  .rightSection svg {
+    width: 150px;
+}
 }

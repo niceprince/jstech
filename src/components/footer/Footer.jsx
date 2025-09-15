@@ -21,7 +21,7 @@ const Footer = () => {
                     width={120}
                   />
                 </NavLink>
-                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
+                <p className="dark:text-body-color-dark mb-2 text-xl leading-relaxed text-body-color">
                   Email - info@jsmatrix.in
                 </p>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
