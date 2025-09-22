@@ -1,3 +1,4 @@
+import Metadata from '../components/common/Metadata';
 import DevHeading from '../components/developement/DevHeading';
 
 const checkIcon = (
@@ -21,6 +22,11 @@ const PrintingServices = () => {
   );
 
   return <>
+    <Metadata 
+      title="JS Matrix | Printing Services"
+      keywords={languages}
+      description={paraText}
+    />
     <section className="pt-18 pt-[4rem] md:pt-[70px]">
       <DevHeading headingBgText={languages} headText={headText} paraText={paraText}  />
       <div className='container mt-8 text-black'>

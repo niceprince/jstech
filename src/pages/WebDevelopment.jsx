@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTwoSectionView from '../components/common/PageTwoSectionView';
+import Metadata from '../components/common/Metadata';
 import DevHeading from '../components/developement/DevHeading';
 import devBgImg from '../assets/images/programming-background-collage.jpg';
 
@@ -9,6 +9,11 @@ const WebDevelopment = () => {
   const paraText = `We create fast, secure, and responsive websites that look great on every device. Our web solutions are built with the latest technologies to ensure seamless performance and long-term growth for your business.`
   
   return <>
+    <Metadata 
+      title="JS Matrix | Web Development Services"
+      keywords={languages}
+      description={paraText}
+    />
     <section className="pt-18 pt-[4rem] md:pt-[70px]">
       <DevHeading headingBgText={languages} headText={headText} paraText={paraText} bgImage={devBgImg} />
       <div className='container mt-8 text-black'>
